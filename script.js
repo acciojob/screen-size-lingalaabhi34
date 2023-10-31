@@ -1,8 +1,14 @@
-function updatesize(){
-  const height = window.innerHeight;
-  const width = window.innerWidth;
-  const one = document.querySelector("h1");
-one.innerText = `Width: ${width} and Height: ${height}`;
-}
-window.addEventListener("resize",updatesize());
-updatesize();
+let height=this.innerHeight;
+    let width=this.innerWidth;
+   let div=document.getElementById("sizeInfo");
+    let h=div.firstChild;
+    h.innerText="Width: "+width+" and Height: "+height;  
+window.addEventListener("resize",function(){
+    let height=this.innerHeight;
+    let width=this.innerWidth;
+   let div=document.getElementById("sizeInfo");
+    let h=div.firstChild;
+ 
+    h.innerText="Width: "+width+" and Height: "+height; 
+  
+  })
